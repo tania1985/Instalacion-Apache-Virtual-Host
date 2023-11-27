@@ -1,0 +1,10 @@
+# Contenedor de apache
+services:
+  web:
+    image: httpd:latest
+    ports:
+      - "80:2000"
+    # Mapeamos el directorio raid
+    volumes:
+      - ./paginas:/usr/local/apache2/htdocs
+      - ./conf:/usr/local/apache2/conf
