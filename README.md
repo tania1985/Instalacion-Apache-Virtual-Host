@@ -5,9 +5,10 @@ Lo primero es ir a git y crear un nuevo repositorio. Después de esto, creamos n
 Apache
 
 Ahora ponemos lo siguiente para crear el contenedor de apache.
-
+```
 $ docker run -d -p 80:80 --name asir_my-apache -v "$PWD"
 :/var/www/html php:7.2-apache
+```
 
 Y creamos un docker-compose.yml con lo siguiente:
 ```
