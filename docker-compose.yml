@@ -24,8 +24,6 @@ services:
     # es posible conflicto cuando el host es 'arm'
     # ya que no existe una imagen para esa plataforma
     platform: linux/amd64
-    ports:
-      - 53:53
     networks:
       mi_red:
         ipv4_address: 10.1.0.2
